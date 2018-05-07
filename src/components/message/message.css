@@ -1,0 +1,31 @@
+.message {
+    display: flex;
+    font-family: Arial;
+}
+.message__image {
+    width: 40px;
+    min-width: 40px;
+    height: 40px;
+    margin-right: 10px;
+    border-radius: 50px;
+    background: aquamarine;
+}
+.message__wrapper {
+    padding-top: 2px;
+}
+.message__info {
+
+}
+.message__info-name {
+    display: inline-block;
+    font-weight: bold;
+    font-size: 15px;
+}
+.message__info-time {
+    display: inline-block;
+    color: #aaa;
+    font-size: 12px;
+}
+.message__text {
+    font-size: 14px;
+}

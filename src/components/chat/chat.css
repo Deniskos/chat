@@ -1,0 +1,11 @@
+.chat {
+    width: 100%;
+    min-height: 200px;
+    margin-bottom: 20px;
+    padding: 5px 10px;
+    border-radius: 3px;
+    box-sizing: border-box;
+    border: 1px solid #ccc;
+    overflow: auto;
+    background-color: aliceblue;
+}
