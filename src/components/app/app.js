@@ -7,13 +7,13 @@ export function superUsefulll () {
 
 }
 
-export function superUsefulll1() {
-
-}
-
-export function superUsefulll2() {
-
-}
+// export function superUsefulll1() {
+//
+// }
+//
+// export function superUsefulll2() {
+//
+// }
 
 class App {
 	constructor({

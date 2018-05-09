@@ -1,8 +1,12 @@
 {
-  "name": "chat",
+  "name": "denis",
   "version": "1.0.0",
-  "description": "js практика,
+  "description": "js practice",
   "main": "index.js",
+  "dependencies": {
+    "pug": "^2.0.3"
+  },
+  "devDependencies": {},
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
@@ -16,4 +20,7 @@
     "url": "https://github.com/Deniskos/chat/issues"
   },
   "homepage": "https://github.com/Deniskos/chat#readme"
+  "devDependencies": {
+    "static-livereload": "^0.1.4"
+  }
 }
