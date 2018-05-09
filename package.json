@@ -1,12 +1,14 @@
 {
-  "name": "denis",
+  "name": "chat",
   "version": "1.0.0",
   "description": "js practice",
   "main": "index.js",
   "dependencies": {
     "pug": "^2.0.3"
   },
-  "devDependencies": {},
+  "devDependencies": {
+    "static-livereload": "^0.1.4"
+  },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
@@ -14,10 +16,10 @@
     "type": "git",
     "url": "git+https://github.com/Deniskos/chat.git"
   },
-  "author": "Kostrygin Denis",
+  "author": "kostrygin denis",
   "license": "ISC",
   "bugs": {
     "url": "https://github.com/Deniskos/chat/issues"
   },
-  "homepage": "https://github.com/Deniskos/chat#readme",
+  "homepage": "https://github.com/Deniskos/chat#readme"
 }
