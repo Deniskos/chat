@@ -3,19 +3,27 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Сбрасывание стилей браузера -->
+    <link rel="stylesheet" href="//cdn.rawgit.com/necolas/normalize.css/master/normalize.css">
+
+    <!-- Подключение библиотеки milligram -->
+    <!--<link rel="stylesheet" href="//cdn.rawgit.com/milligram/milligram/master/dist/milligram.min.css">-->
+
+    <!-- Стили приложения -->
+    <link rel="stylesheet" href="./src/css/main.css">
+    <link rel="stylesheet" href="./src/components/field/field.css">
+    <link rel="stylesheet" href="./src/components/chat/chat.css">
+    <link rel="stylesheet" href="./src/components/message/message.css">
+
     <title>Document</title>
 </head>
 <body>
-<h1>Здесь будет чат!</h1>
+
 <div id="application" class="js-application"></div>
 
 <script type="module">
-
-    alert('Хай!');
-
     import './src/index.js';
-
-
 </script>
 </body>
 </html>

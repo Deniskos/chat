@@ -1,34 +1,40 @@
 
-/// import Chat from '../chat/chat'
-/// import Field from '../field/field'
+import Chat from './../chat/chat.js';
+import Field from './../field/field.js';
 
 
-export function superUsefulll () {
 
+export default class App {
+    constructor({
+			el,
+			data,
+		}) {
+        this.el = el;
+        this.data = data;
+
+        this.chat = new Chat({
+            el: document.createElement('div'),
+            data: {
+                messages: data.messages,
+                user: data.user,
+            },
+        });
+
+        this.form = new Field({
+            el: document.createElement('div'),
+            data: {
+                placeholder: 'Введите текст',
+            },
+        });
+
+        this.el.append(
+            this.chat.el,
+            this.form.el,
+        );
+    }
+
+    render() {
+        this.chat.render();
+        this.form.render();
+    }
 }
-
-// export function superUsefulll1() {
-//
-// }
-//
-// export function superUsefulll2() {
-//
-// }
-
-class App {
-	constructor({
-		el,
-		data,
-	}) {
-		this.el = el;
-	}
-
-	render() {
-		this.el.innerHTML = `
-			<h1>Приложение запущено</h1>
-		`;
-	}
-}
-
-
-export default App;
