@@ -1,7 +1,7 @@
 
 import Chat from './../chat/chat.js';
 import Field from './../field/field.js';
-
+import Message from './../message/message.js';
 
 
 export default class App {
@@ -15,8 +15,14 @@ export default class App {
         this.chat = new Chat({
             el: document.createElement('div'),
             data: {
-                messages: data.messages,
                 user: data.user,
+            },
+        });
+
+        this.message = new Message({
+            el: document.createElement('div'),
+            data: {
+                messages: data.messages,
             },
         });
 
@@ -27,14 +33,23 @@ export default class App {
             },
         });
 
+        this.chat.el.append(
+            this.message.el,
+        );
+
         this.el.append(
             this.chat.el,
             this.form.el,
         );
+
+
+
     }
 
     render() {
+        this.message.render();
         this.chat.render();
         this.form.render();
+
     }
 }

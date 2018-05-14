@@ -1,5 +1,6 @@
 .message {
     display: flex;
+    margin-top: 15px;
     font-family: Arial;
 }
 .message__image {

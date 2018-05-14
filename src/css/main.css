@@ -1,4 +1,7 @@
 #application {
     max-width: 700px;
     margin: 40px auto;
+    background: slategrey;
+    padding: 20px;
+    border-radius: 3px;
 }
